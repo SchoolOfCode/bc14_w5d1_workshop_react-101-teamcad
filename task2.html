@@ -20,12 +20,14 @@
     <script>
       const rootElement = document.querySelector("#root");
       const root = ReactDOM.createRoot(rootElement);
+
+    
       function handleClick(e) {
         alert("You clicked me!");
       }
       function Button() {
-        // code here
-        return ;
+        const button = React.createElement("button", {className: "button"}, "Big button");
+       return button;
       }
 
       root.render(Button());
